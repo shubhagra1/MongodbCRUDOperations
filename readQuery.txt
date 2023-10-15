@@ -1,0 +1,16 @@
+db.mydb.find({}) 
+
+db.mydb.find({status:"failed"})
+
+db.mydb.find({
+		score:{$in:[90]}
+	})  
+
+db.mydb.find({
+	$or:[
+		{status:"failed"},
+		{score:{$in:[90]}},
+		{qty:{$gte:50}}
+	    ]
+		
+	})  

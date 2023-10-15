@@ -1,0 +1,11 @@
+db.mydb.find({}).sort({qty:1})  //incresing order
+
+db.mydb.find({}).sort({qty:-1}) //decresing order
+
+db.mydb.find({}).sort({qty:-1}).limit(1) // dsc order only 1 ele
+
+more func like
+sort()
+limit()
+max()
+min()

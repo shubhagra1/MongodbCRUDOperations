@@ -1,0 +1,22 @@
+db.mydb.updateOne(
+	{qty:50},
+	{$set:{ item: "motherboard"}}
+)
+
+db.mydb.updateMany(
+	{item:"canvas"},
+	{$set:{qty:75}}
+)
+
+db.mydb.updateMany(
+	{qty:{$lt:75,$gte:50}},
+	{$set:{item:"phone"}}
+	
+)
+
+db.mydb.replaceOne(
+	{status:"Passed"},
+	{
+	  score:[45,75,34,87]
+	}
+)
